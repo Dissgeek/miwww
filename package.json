@@ -1,44 +1,31 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@react-native-community/masked-view": "0.1.10",
-    "@react-navigation/bottom-tabs": "^5.11.11",
-    "@react-navigation/native": "5.5.1",
-    "@react-navigation/stack": "^5.5.1",
-    "expo": "^41.0.0",
-    "expo-asset": "~8.3.1",
-    "expo-camera": "^11.0.3",
-    "expo-constants": "~10.1.3",
-    "expo-font": "~9.1.0",
-    "expo-location": "^12.0.4",
-    "firebase": "8.2.3",
-    "formik": "2.1.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
-    "react-native-camera": "^3.43.9",
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-hide-with-keyboard": "1.2.1",
-    "react-native-maps": "^0.28.0",
-    "react-native-reanimated": "~2.1.0",
-    "react-native-safe-area-context": "^3.2.0",
-    "react-native-screens": "~3.0.0",
-    "react-native-web": "~0.13.12",
-    "react-navigation": "^4.4.4",
-    "yup": "0.27.0"
+    "bcrypt": "^5.0.1",
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.10",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0",
-    "@babel/runtime": "^7.9.0",
-    "babel-preset-expo": "8.3.0",
-    "gh-pages": "^3.2.0"
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "nodemon": "^2.0.7"
   },
-  "private": true
+  "description": ""
 }
